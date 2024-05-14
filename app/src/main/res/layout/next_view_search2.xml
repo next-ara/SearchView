@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.next.view.round.RoundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_search"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_36"
+    android:background="?attr/colorSecondaryContainer"
+    android:paddingHorizontal="@dimen/dp_7"
+    app:radius="@dimen/dp_12">
+
+    <LinearLayout
+        android:id="@+id/layout_search_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <com.next.view.round.RoundImageView
+            android:layout_width="@dimen/dp_21"
+            android:layout_height="@dimen/dp_21"
+            android:background="@drawable/next_ic_search2"
+            app:radius="@dimen/dp_5" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:ellipsize="none"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
+            android:text="搜索"
+            android:textColor="?attr/colorOnPrimaryContainer"
+            android:textSize="@dimen/dp_15" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:imeOptions="actionSearch"
+        android:paddingRight="@dimen/dp_28"
+        android:singleLine="true"
+        android:textColor="?attr/colorOnPrimaryContainer"
+        android:textSize="@dimen/dp_15" />
+
+    <com.next.view.round.RoundImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="@dimen/dp_21"
+        android:layout_height="@dimen/dp_21"
+        android:layout_alignRight="@id/edit_search"
+        android:layout_centerVertical="true"
+        android:background="@drawable/next_ic_search_delete"
+        app:radius="@dimen/dp_5" />
+
+</com.next.view.round.RoundRelativeLayout>

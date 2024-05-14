@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.next.view.search'
+                artifactId = 'SearchView'
+                version = "1.0.0"
+            }
+        }
+    }
+}
+
+android {
+    namespace 'com.next.view.search'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 24
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    //圆角控件集
+    implementation 'com.github.next-ara:RoundView:1.0.0'
+
+    implementation 'com.google.android.material:material:1.8.0'
+}
