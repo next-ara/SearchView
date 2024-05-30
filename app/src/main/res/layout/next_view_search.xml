@@ -4,7 +4,7 @@
     android:id="@+id/layout_search"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_36"
-    android:background="?attr/colorSecondaryContainer"
+    android:background="?colorSecondaryContainer"
     app:radius="@dimen/dp_18">
 
     <LinearLayout
@@ -29,7 +29,7 @@
             android:fontFamily="sans-serif-medium"
             android:paddingRight="@dimen/dp_4"
             android:text="搜索"
-            android:textColor="?attr/colorOnPrimaryContainer"
+            android:textColor="?colorOnPrimaryContainer"
             android:textSize="@dimen/sp_12" />
 
     </LinearLayout>
@@ -45,7 +45,7 @@
         android:imeOptions="actionSearch"
         android:paddingHorizontal="@dimen/dp_12"
         android:singleLine="true"
-        android:textColor="?attr/colorOnPrimaryContainer"
+        android:textColor="?colorOnPrimaryContainer"
         android:textSize="@dimen/sp_12" />
 
     <ImageView

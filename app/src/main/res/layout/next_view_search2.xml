@@ -4,7 +4,7 @@
     android:id="@+id/layout_search"
     android:layout_width="wrap_content"
     android:layout_height="@dimen/dp_36"
-    android:background="?attr/colorSecondaryContainer"
+    android:background="?colorSecondaryContainer"
     android:paddingHorizontal="@dimen/dp_7"
     app:radius="@dimen/dp_12">
 
@@ -31,7 +31,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:text="搜索"
-            android:textColor="?attr/colorOnPrimaryContainer"
+            android:textColor="?colorOnPrimaryContainer"
             android:textSize="@dimen/dp_15" />
 
     </LinearLayout>
@@ -47,7 +47,7 @@
         android:imeOptions="actionSearch"
         android:paddingRight="@dimen/dp_28"
         android:singleLine="true"
-        android:textColor="?attr/colorOnPrimaryContainer"
+        android:textColor="?colorOnPrimaryContainer"
         android:textSize="@dimen/dp_15" />
 
     <com.next.view.round.RoundImageView
